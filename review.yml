@@ -1,0 +1,87 @@
+aid: atlantic-union-bank
+name: Atlantic Union Bank
+review:
+  question: Does Atlantic Union Bank expose a first-party public developer API or a documented open-finance data-access API?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Atlantic Union Bank publishes no first-party public developer portal and no
+    documented public API. Probes of the conventional developer and API hosts
+    (developer.atlanticunionbank.com, developers.atlanticunionbank.com,
+    api.atlanticunionbank.com) do not resolve (connection code 000), and the
+    public site returns 404 for /developers and /api. The homepage and sitemap
+    expose only retail banking, investor relations, and helpful-links pages
+    (privacy, terms of use, security & fraud center, contact) — no API
+    reference, no SDKs, no downloadable OpenAPI/Swagger, and no sandbox.
+
+    Consistent with the voluntary, fragmented US open-finance landscape (no
+    single mandated open-banking contract), consumer-permissioned account and
+    transaction data appears to be available only INDIRECTLY through third-party
+    aggregators — Plaid, Finicity (by Mastercard), MX, and Teller — as listed in
+    external aggregator coverage directories, not via any first-party bank API.
+    No direct FDX-conformant data-access endpoint, Akoya Data Access Network
+    participation, or published CFPB Section 1033 (Personal Financial Data
+    Rights) posture was found on the bank's own properties. Because there is no
+    documented first-party surface, no authentication model (OAuth2/OIDC,
+    API-key, or mTLS) could be confirmed, and no specification could be
+    harvested. This is an honest identity-only, aggregator-only record.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalURL: ""
+    downloadableSpec: false
+    specProvenance: none
+    fdxParticipant: false
+    akoyaParticipant: false
+    section1033Posture: not published
+    aggregatorAccess:
+      - Plaid
+      - Finicity (Mastercard)
+      - MX
+      - Teller
+    authModel: unknown (no first-party API documented)
+  transports:
+    - protocol: REST
+      documented: false
+      note: No first-party REST API is documented by Atlantic Union Bank.
+  probes:
+    - url: https://developer.atlanticunionbank.com
+      status: 000
+      note: Host does not resolve / no connection.
+    - url: https://developers.atlanticunionbank.com
+      status: 000
+      note: Host does not resolve / no connection.
+    - url: https://api.atlanticunionbank.com
+      status: 000
+      note: Host does not resolve / no connection.
+    - url: https://atlanticunionbank.com/developers
+      status: 404
+      note: No developers page.
+    - url: https://atlanticunionbank.com/api
+      status: 404
+      note: No API page.
+    - url: https://www.atlanticunionbank.com/
+      status: 200
+      note: Retail banking homepage; footer links only (privacy, terms, security, careers, IR).
+sources:
+  - url: https://www.atlanticunionbank.com/
+    type: Website
+    note: Bank homepage; no developer, API, or open-banking references. Footer links only.
+  - url: https://investors.atlanticunionbank.com/
+    type: InvestorRelations
+    note: "Atlantic Union Bankshares Corporation (NYSE: AUB) investor relations; ~$37B assets, Richmond VA."
+  - url: https://www.atlanticunionbank.com/about/helpful-links/privacy
+    type: PrivacyPolicy
+    note: Describes consumer data handling; no first-party data-sharing API.
+  - url: https://www.openbankingtracker.com/provider/atlantic-coast-bank
+    type: ThirdPartyDirectory
+    note: External open-banking directory context (aggregator-mediated access typical of US regional banks).
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No first-party public API or downloadable specification exists to harvest.
+    The record is identity-only with an honest aggregator-only open-finance
+    posture; apis[] is intentionally empty rather than padded with fabricated
+    entries.
