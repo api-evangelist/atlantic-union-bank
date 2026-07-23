@@ -33,6 +33,12 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/atlantic-union-bank-domain-security.yml
+- type: WellKnown
+  url: well-known/atlantic-union-bank-well-known.yml
+- type: LLMsTxt
+  url: llms/atlantic-union-bank-llms.txt
 - type: Website
   url: https://www.atlanticunionbank.com/
 - type: InvestorRelations

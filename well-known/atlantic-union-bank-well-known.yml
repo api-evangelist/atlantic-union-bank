@@ -1,0 +1,21 @@
+generated: '2026-07-23'
+method: searched
+source: live probes of the primary web host
+host: https://www.atlanticunionbank.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+notes: >-
+  No /.well-known discovery surface published. Atlantic Union Bank exposes no
+  first-party public API host, OAuth/OIDC authorization server, or API catalog.
+  Absence of these documents is expected for a US regional bank operating in the
+  voluntary open-finance landscape; consumer-permissioned data is reached via
+  third-party aggregators rather than a direct bank-hosted developer surface.

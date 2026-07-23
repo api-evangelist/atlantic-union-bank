@@ -1,0 +1,24 @@
+# Atlantic Union Bank
+
+> Atlantic Union Bank is a Virginia state-chartered commercial bank (roots to 1902) and the principal banking subsidiary of Atlantic Union Bankshares Corporation (NYSE: AUB), a Richmond, Virginia bank holding company. It is the largest regional bank headquartered in Virginia, with roughly $37 billion in assets and a branch network across Virginia, Maryland, and North Carolina, offering consumer and business checking, savings, lending, mortgages, credit cards, and wealth management.
+
+## API posture
+
+- Atlantic Union Bank publishes no first-party public developer portal or documented public API.
+- It operates under the voluntary, fragmented US open-finance landscape rather than a mandated open-banking regime.
+- Consumer-permissioned account and transaction data is reached indirectly through third-party data aggregators (Plaid, Finicity by Mastercard, MX, Teller) as surfaced by aggregator coverage directories.
+- No direct FDX-conformant data-access endpoint, Akoya participation, or published CFPB Section 1033 posture was found.
+- This is an identity-only, aggregator-only record with no first-party API surface.
+
+## Company
+
+- [Website](https://www.atlanticunionbank.com/)
+- [Investor Relations](https://investors.atlanticunionbank.com/)
+- [LinkedIn](https://www.linkedin.com/company/atlantic-union-bank)
+- [Contact / Support](https://www.atlanticunionbank.com/about/contact-us)
+
+## Legal & Security
+
+- [Privacy Policy](https://www.atlanticunionbank.com/about/helpful-links/privacy)
+- [Terms of Use](https://www.atlanticunionbank.com/about/helpful-links/terms-of-use)
+- [Security & Fraud Center](https://www.atlanticunionbank.com/about/helpful-links/security-fraud-center)
