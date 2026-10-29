@@ -1,4 +1,4 @@
-# Atlantic Union Bank (atlantic-union-bank)
+# Atlantic Union Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,51 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Atlantic Union Bank is a Virginia state-chartered commercial bank with roots going back to 1902, and the principal banking subsidiary of Atlantic Union Bankshares Corporation (NYSE: AUB), a Richmond, Virginia bank holding company. It is the largest regional bank headquartered in Virginia, with roughly $37 billion in assets and a branch network across Virginia, Maryland, and North Carolina, offering consumer and business checking, savings, lending, mortgages, credit cards, and wealth management.
+Atlantic Union Bank is a Virginia state-chartered commercial bank with roots going back to 1902, and the principal banking subsidiary of Atlantic Union Bankshares Corporation (NYSE: AUB), a Richmond, Virginia bank holding company regulated under the Bank Holding Company Act of 1956. It is the largest regional bank headquartered in Virginia, with roughly $37 billion in assets and a branch network across Virginia, Maryland, and North Carolina, offering consumer and business checking, savings, lending, mortgages, credit cards, and wealth management. Like most US regional banks, Atlantic Union Bank operates under the voluntary, fragmented US open-finance landscape rather than a mandated open-banking regime: it publishes no first-party public developer portal or documented public API. Consumer-permissioned account and transaction data is reached indirectly through third-party data aggregators (Plaid, Finicity by Mastercard, MX, Teller) as surfaced by aggregator coverage directories, and no direct FDX-conformant data-access endpoint, Akoya participation, or published CFPB Section 1033 posture was found. This is an identity-only, aggregator-only record with no first-party API surface.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/atlantic-union-bank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/atlantic-union-bank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Regional Bank · Virginia · Open Finance
 
-## Open-Finance & API Posture
+## Atlantic Union Bank on APIs.io
 
-The United States has no single mandated open-banking contract; open finance here is voluntary and fragmented. Consistent with most US regional banks, Atlantic Union Bank publishes **no first-party public developer portal and no documented public API**:
+Everything profiled for Atlantic Union Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/atlantic-union-bank/](https://apis.io/providers/atlantic-union-bank/)** — or go straight to one of the APIs or properties below.
 
-- Conventional developer/API hosts (`developer.`, `developers.`, `api.atlanticunionbank.com`) do not resolve, and the public site returns 404 for `/developers` and `/api`.
-- No downloadable OpenAPI/Swagger, SDKs, or sandbox are published.
-- Consumer-permissioned account and transaction data appears reachable only **indirectly through third-party aggregators** — Plaid, Finicity (by Mastercard), MX, and Teller — as listed in external aggregator coverage directories, not via a first-party bank API.
-- No direct FDX-conformant data-access endpoint, Akoya Data Access Network participation, or published CFPB Section 1033 posture was found on the bank's own properties.
+### Published properties
 
-This is an honest identity-only, aggregator-only record. See [`review.yml`](review.yml) for the full reviewer finding and probe log.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (1)
 
-- Financial Services
-- Banking
-- United States
-- Regional Bank
-- Virginia
-- Open Finance
-- Data Aggregation
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Atlantic Union Bank Domain Security](https://apis.io/security/atlantic-union-bank/atlantic-union-bank-domain-security/)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+## Where to find this API
 
-## APIs
-
-None. Atlantic Union Bank exposes no documented first-party public API. Data access is aggregator-mediated only.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.atlanticunionbank.com/)
-- [Investor Relations](https://investors.atlanticunionbank.com/)
-- [LinkedIn](https://www.linkedin.com/company/atlantic-union-bank)
-- [Privacy Policy](https://www.atlanticunionbank.com/about/helpful-links/privacy)
-- [Terms of Service](https://www.atlanticunionbank.com/about/helpful-links/terms-of-use)
-- [Security](https://www.atlanticunionbank.com/about/helpful-links/security-fraud-center)
 - [Support](https://www.atlanticunionbank.com/about/contact-us)
+- [Security](https://www.atlanticunionbank.com/about/helpful-links/security-fraud-center)
+- [Terms of service](https://www.atlanticunionbank.com/about/helpful-links/terms-of-use)
+- [Privacy policy](https://www.atlanticunionbank.com/about/helpful-links/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 10.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/atlantic-union-bank/](https://apis.io/providers/atlantic-union-bank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Atlantic Union Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/atlantic-union-bank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
